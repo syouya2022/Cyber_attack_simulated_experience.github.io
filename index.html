@@ -1,18 +1,21 @@
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset=utf-8" />
-  <link rel="stylesheet" href="../CSS/MailForm.css">
+  <!--<link rel="stylesheet" href="../CSS/MailForm.css">-->
   <title>sample</title>
 </head>
 
 <body>
+  <!---
   <form action="..\PHP\MailForm_Test.php" method="post">
-<div class ="address1">
-  <p>下記アドレス、パスワードを入力してください<br>
-  id = a.com<br>
-  password = abc
-  </p>
-</div>
+-->
+    <div class ="address1">
+      <p>下記アドレス、パスワードを入力してください<br>
+        id = a.com<br>
+        password = abc
+      </p>
+    </div>
     <div class="name">
       名前：<br/>
       <input type="text" name="name" size="40" value="名前書け" /><br/>
@@ -25,8 +28,13 @@
     問合せ内容：<br />
     <textarea name="inquiry" cols="50" rows="5"></textarea><br/>
     <br/>
-
-    <input type="submit" value="送信" />
-  </form>
-</body>
-</html>
+    <div id = "mail">
+      <!--
+      <input type="submit" value="送信" onclick="frameClick();"/>-->
+<div class="frame" onclick="frameClick();">
+  <input type="submit" value="送信"/>
+</div>
+      </div>
+    <script type="text/javascript" src="../JavaScript/MailForm_First.js"></script>
+  </body>
+  </html>
